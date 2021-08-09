@@ -1,0 +1,13 @@
+
+
+.slickk_arrow{
+color: black;
+}
+.slick_prev{
+z-index: 100;
+left:20px !important; 
+}
+.slick_next{
+z-index: 100;
+right:20px !important; 
+}

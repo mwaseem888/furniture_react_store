@@ -1,0 +1,157 @@
+.container .heading{
+    font-size: 3rem;
+    margin: 0;
+    text-transform: capitalize;
+    color: darkblue;
+    text-align: center;
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-container .videos{
+   height: 15rem;
+   width: 18rem; 
+   margin: 2rem;
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,0.5);
+   overflow: hidden;
+   border-radius: 1rem;
+}
+
+.video-container .videos video{
+width: 100%;
+height: 100%;
+object-fit: cover;
+outline: none;
+border: none;
+cursor: pointer;
+
+}
+
+.video-container .videos video:hover{
+    transition: .2s linear;
+    transform: scale(1.3);
+}
+.container_1{
+    width: 100%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+
+}
+.image-card{
+    padding: 5px;
+    border:  1px solid #ddd;
+    border-radius: 2px;
+}
+.image{
+    width: 100%;
+}
+.filter_btn{
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  justify-content: space-between;
+}
+.btn1{
+    border-style:  solid black;
+    border-radius: 5px;
+    margin: 0px 10px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn1:hover{
+    outline: none;
+    border-radius: 7px;
+    margin: 0px 10px;
+    background-color: black;
+    color: yellowgreen;
+    cursor: pointer;
+}
+  .active{
+    font-weight: bold;
+    border-bottom: 1px solid blue;
+}
+.cat{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(211, 195, 195);
+}
+.book{
+    
+    position: relative;
+    width: 350px;
+    height: 500px;
+    transition: transform 0.5s;
+}
+.paper{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+.front, .back{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+.front{
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid powderblue;
+}
+.back{
+    z-index: 0;
+}
+.front-content, .back-content{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.back-content{
+   transform: rotateY(180deg); 
+}
+.flipped .front,
+.flipped .back{
+    transform: rotateY(-180deg);
+}
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+
+    
+}
+button:focus{
+    outline: none;
+}
+button:hover  {
+    color:gray;  
+}
+#p1{
+    z-index: 3;
+}
+#p2{
+    z-index: 2;
+}
+#p3{
+    z-index: 1;
+}
